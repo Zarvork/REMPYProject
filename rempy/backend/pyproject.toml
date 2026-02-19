@@ -1,0 +1,22 @@
+[project]
+name = "backend"
+version = "0.1.0"
+authors = [
+    { name = "Anis Feore" },
+    { name = "Lucil Finkelstein" },
+]
+description = "backend"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.129.0",
+    "imageio>=2.37.2",
+    "notebook>=7.5.3",
+    "numba>=0.63.1",
+    "numpy>=2.3.5",
+    "pandas>=3.0.1",
+    "python-multipart>=0.0.22",
+]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["algo*", "utils*"]
