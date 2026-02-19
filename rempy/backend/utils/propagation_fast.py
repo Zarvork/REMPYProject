@@ -26,7 +26,7 @@ def empty(h: dict) -> bool:
 
 
 @njit
-def propagation(img: np.ndarray, mask: np.ndarray) -> np.ndarray:
+def propagation_njit(img: np.ndarray, mask: np.ndarray) -> np.ndarray:
     img = img.astype(np.int64)
     D = np.full(mask.shape, 1e10)
     q = numba.typed.Dict.empty(
