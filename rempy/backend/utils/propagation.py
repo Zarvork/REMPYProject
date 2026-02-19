@@ -1,6 +1,6 @@
 import numpy as np
 
-from backend.utils.PQueue import PQueue
+from backend.utils.pqueue import PQueue
 
 
 def propagation(img: np.ndarray, mask: np.ndarray) -> np.ndarray:

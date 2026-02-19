@@ -15,7 +15,9 @@ dependencies = [
     "numba>=0.63.1",
     "numpy>=2.3.5",
     "pandas>=3.0.1",
+    "psycopg2-binary>=2.9.11",
     "python-multipart>=0.0.22",
+    "sqlmodel>=0.0.34",
 ]
 [tool.setuptools.packages.find]
 where = ["."]
