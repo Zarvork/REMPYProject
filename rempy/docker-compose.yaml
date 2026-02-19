@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgres
+    container_name: db
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: a_very_secure_password
+    ports:
+      - "5432:5432"
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  
+#  backend:
+#    build: ./backend
+#    container_name: backend
+#    restart: always
+#    depends_on: 
+#      - db
+#    ports:
+#      - "8000:8000"
