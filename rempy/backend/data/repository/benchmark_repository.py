@@ -5,7 +5,7 @@ from sqlmodel import Session, SQLModel, create_engine, select
 from backend.data.model.benchmark_model import Benchmark
 
 # db is when in container, otherwise it is localhost
-DATABASE_URL = "postgresql://postgres:a_very_secure_password@localhost/postgres"
+DATABASE_URL = "postgresql://postgres:a_very_secure_password@db/postgres"
 
 engine = create_engine(DATABASE_URL, echo=True)
 
