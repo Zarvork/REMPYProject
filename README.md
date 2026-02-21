@@ -10,6 +10,12 @@ This application is divided in 3 parts:
 - The backend: This is the server of the application (handles requests, logic, DB...).
 - The database: All the benchmark data are stored in a PostgreSQL DB.
 
+**Warning**
+
+- The image and mask has to be in PNG format
+- The image and mask has to have exactly the same size (necessary for the algorithm)
+- The mask has to be a valid binary mask (only 0 and 255 value in the image)
+
 ## Installation
 
 The whole project is usable from a Docker Compose file. Each Python server
