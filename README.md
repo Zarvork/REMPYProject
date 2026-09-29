@@ -34,3 +34,8 @@ instance (front-end and back-end) is handled by uv. The database used is Postgre
 3. Go to **http://127.0.0.1:8050** to connect to the application
 
 4. Enjoy ! 
+
+## Authors
+
+- Anis Feore
+- Lucil Finkelstein
